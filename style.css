@@ -1,0 +1,30 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(5,1fr);
+}
+
+.header {
+  background-color: #f87171;
+  grid-area: 1 / 2 / 2 / 6;
+}
+
+.sidebar {
+  background-color: #06b6d4;
+  grid-area: 1 / 1 / 6 / 2;
+}
+
+.main {
+  background-color: #facc15;
+  grid-area: 2 / 2 / 6 / 6;
+}
+
